@@ -1,11 +1,18 @@
-<h1>Songs and Shit</h1>
+<div>
+  <h1 class="outline">song party</h1>
+  <h3 class="outline">share your songs and let's party!</h3>
+</div>
 
 <% @songs.each do |song| %>
   <div class="song">
-    <h3><a href="/songs/<%= song.id %>"><%= song.song_title %></a> 
-    <small>(by: <%= song.author %>)</small></h3>
-    <h4><a href="<%= song.url %>">Link</a></h4>
+    <h3><a href="<%= song.url %>"><%= song.song_title %></a> 
+    <small>by: <%= song.author %></small></h3>
+    <!-- <h4><a href="<%= song.url %>">Link</a></h4> -->
   </div>
 <% end %>
 
-<a href="/songs/new">Post a song and see shit!</a>  
+<div class="footerholder">
+  <div class="footer">
+    <a href="/songs/new">Want to post a song?</a>
+  </div>
+</div>

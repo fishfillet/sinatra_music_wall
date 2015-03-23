@@ -1,0 +1,92 @@
+html{
+  height: 100%;
+  font-size: 1rem;
+  background-color: #608080;
+  font-family: futura-pt,futura-heavy,"Helvetica Neue",
+  Helvetica,Arial,sans-serif;
+}
+
+body{
+  margin: 0;
+  color: black;
+  height: 100%;
+  width: 100%;
+}
+
+*,
+*:after,
+*:before {
+  box-sizing:border-box;
+  -webkit-box-sizing:border-box;
+  -moz-box-sizing:border-box;
+  -webkit-font-smoothing:antialiased;
+  font-smoothing:antialiased;
+  text-rendering:optimizeLegibility;
+}
+
+h1{
+  font-size: 4em;
+  color: #f4ea84;
+}
+
+h2{
+  font-size: 4em;
+}
+
+h3{
+  font-size: 2em;
+  margin: 0;
+}
+
+p{
+  font-size: 1em;
+  margin: 0;
+}
+
+a{
+  text-decoration: none;
+  color: #E0C0C0;
+
+}
+
+.song{
+  text-align: center;
+  margin-top: 1em;
+}
+
+.outline{
+  color: #f4ea84;
+  font-weight: 700;
+  text-align: center;
+  width: 100%;
+  text-transform: uppercase;
+  text-shadow:
+  -1px -1px 0 #404040,
+  1px -1px 0 #404040,
+  -1px 1px 0 #404040,
+  1px 1px 0 #404040; 
+} 
+
+.footerholder {
+    background: none repeat scroll 0 0 transparent;
+    bottom: 0;
+    position: fixed;
+    text-align: center;
+    width: 100%;
+}
+
+.footer {
+    background: none repeat scroll 0 0 #E0C0A0;
+    height: 5em;
+    margin: auto;
+    width: 100%;
+}
+
+.footer a{
+  margin: auto;
+  padding: auto;
+  text-decoration: none;
+  font-weight: 700;
+  font-size: 3em;
+  color: #404040;
+}
