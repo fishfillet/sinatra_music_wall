@@ -7,11 +7,13 @@
   <div class="song">
     <h3><a href="<%= song.url %>"><%= song.song_title %></a> 
     <small>by: <%= song.author %></small></h3>
+    <p>posted by: <%= User.where(id: song.user_id).first.username %></p>
   </div>
 <% end %>
 
 <div class="footerholder">
   <div class="footer">
     <a href="/songs/new">Want to post a song?</a>
+    <a href="/logout">Or logout?</a>
   </div>
 </div>

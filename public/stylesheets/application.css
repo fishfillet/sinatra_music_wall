@@ -73,6 +73,7 @@ a{
     position: fixed;
     text-align: center;
     width: 100%;
+    font-size: .5em;
 }
 
 .footer {

@@ -10,7 +10,7 @@
 <% end %>
 
 
-<form method="post" action="/songs">
+<form method="post" action="/songs/new">
   <div>
     <label>Artist:</label>
     <input type="text" name="author" value="<%= @songs.author %>">
@@ -21,9 +21,15 @@
   </div>
   <div>
     <label>Url:</label>
-    <input type="text" name="content" value="<%= @songs.url %>">
+    <input type="text" name="url" value="<%= @songs.url %>">
   </div>
   <div>
     <input type="submit" value="Submit">
   </div>
 </form>
+
+<div class="footerholder">
+  <div class="footer">
+    <a href="/logout">logout?</a>
+  </div>
+</div>

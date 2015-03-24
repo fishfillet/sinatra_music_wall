@@ -46,16 +46,13 @@ get '/songs/new' do
   erb :'songs/new'
 end
 
-# get '/songs/:id' do
-#   @songs = Song.find params[:id]
-#   erb :'songs/show'
-# end
-
-post '/songs' do
+post '/songs/new' do
+  @current_user = User.where(username: request.cookies["username"])[0] 
   @songs = Song.new(
-    song_title:   params[:song_title],
+    song_title: params[:song_title],
     url: params[:url],
-    author:  params[:author]
+    author: params[:author],
+    user_id: @current_user.id
   )
   if @songs.save
     redirect '/songs'
